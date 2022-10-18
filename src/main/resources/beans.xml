@@ -6,7 +6,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="sim" class="com.haresh.spring.ioc.Vodafone"></bean>
+    <bean id="sim" class="com.haresh.spring.ioc.Vodafone"/>
     <bean id="student" class="com.haresh.spring.di.Student">
         <property name="name" value="Haresh Prajapati"/>
         <property name="id" value="1"/>
@@ -15,5 +15,15 @@
         <constructor-arg name="name" value="Jalak Prajapati"/>
         <constructor-arg name="id" value="2"/>
     </bean>
+    <bean id="mathCheatObject" class="com.haresh.spring.di.objecttype.MathCheat"/>
+    <bean id="haresh" class="com.haresh.spring.di.objecttype.Student">
+        <property name="mathCheat" ref="mathCheatObject" />
+        <property name="id" value="1"  />
+    </bean>
+    <bean id="jalak" class="com.haresh.spring.di.objecttype.Student">
+        <property name="mathCheat" ref="mathCheatObject" />
+        <property name="id" value="1"  />
+    </bean>
+
 
 </beans>

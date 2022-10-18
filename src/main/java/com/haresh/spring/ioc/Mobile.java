@@ -1,4 +1,4 @@
-package com.haresh;
+package com.haresh.spring.ioc;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

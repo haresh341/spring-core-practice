@@ -1,4 +1,4 @@
-package com.haresh;
+package com.haresh.spring.ioc;
 
 public interface Sim {
     void calling();

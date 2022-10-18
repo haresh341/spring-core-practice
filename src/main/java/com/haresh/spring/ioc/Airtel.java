@@ -1,6 +1,6 @@
-package com.haresh;
+package com.haresh.spring.ioc;
 
-public class Airtel implements Sim{
+public class Airtel implements Sim {
     @Override
     public void calling() {
         System.out.println("calling from airtel sim");

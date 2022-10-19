@@ -15,4 +15,8 @@
         <constructor-arg name="cheat" ref="scienceCheatObject" />
         <constructor-arg name="id" value="2"  />
     </bean>
+    <bean id="message" class="com.haresh.spring.loosecoupling.assignment.service.MessageService"/>
+    <bean id="vodafoneSim" class="com.haresh.spring.loosecoupling.assignment.sim.Vodafone">
+        <property name="service" ref="message"/>
+    </bean>
 </beans>

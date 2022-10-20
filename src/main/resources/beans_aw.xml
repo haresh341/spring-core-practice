@@ -7,8 +7,12 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
     <context:annotation-config/>
     <bean id="human" class="com.haresh.spring.autowiring.Human" />
-    <bean id="heart" class="com.haresh.spring.autowiring.Heart" >
+    <bean id="humanHeart" class="com.haresh.spring.autowiring.Heart" >
         <property name="nameOfAnimal" value="human"/>
         <property name="noOfHearts" value="1"/>
+    </bean>
+    <bean id="octoposHeart" class="com.haresh.spring.autowiring.Heart" >
+        <property name="nameOfAnimal" value="octopus"/>
+        <property name="noOfHearts" value="3"/>
     </bean>
 </beans>
